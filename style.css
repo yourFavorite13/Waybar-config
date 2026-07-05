@@ -1,0 +1,64 @@
+* {
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+window#waybar {
+    background-color: rgba(255, 254, 226, 0.5);
+    color: #B4302C;
+    /* background-color: transparent; */
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#clock {
+    background-color: #FFD650;
+    color: #B4302C;
+    padding: 0px 20px;
+    margin: 5px 0px;
+    border-radius: 20px;
+}
+
+#workspaces button {
+    padding: 3px 2.5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border-radius: 6.5px;
+    background-color: #FFD650;
+    color: #B4302C;
+}
+
+
+#workspaces button.focused, #workspaces button.active {
+    background-color: #FEA8A7;
+    color: #FFFEE2;
+}
+
+#window {
+    background-color: #FEA8A7;
+    color: #FFFEE2;
+    border-radius: 14.5px;
+    padding: 0px 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#window.empty {
+    background-color: rgba(0,0,0,0);
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+/* #cpu,#memory, */
+#idle_inhibitor,#network,#pulseaudio,#tray {
+    background-color: #FFD650;
+    color:#B4302C;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 14.5px;
+    padding: 0px 10px;
+} 

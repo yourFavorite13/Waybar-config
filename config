@@ -1,0 +1,38 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  "height": 29,
+  "modules-left": ["hyprland/workspaces","hyprland/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["idle_inhibitor","network","pulseaudio","tray"],
+  "hyprland/mode": {
+    "format": "{}"
+  },
+  "hyprland/window": {
+    "format": "{initialClass}"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "1",
+      "deactivated": "0"
+    }
+  },
+  "clock": {
+    "format": "{:%H:%M:%S}"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-icons": {
+      "default": ["\ue050"]
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "format-muted": "\uf00d {volume}%"
+  },
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10,
+    "show-passive-items": true
+  }
+}
