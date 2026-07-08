@@ -19,16 +19,19 @@
     }
   },
   "clock": {
-    "format": "{:%H:%M:%S}"
+    "format": "{:%H:%M:%S}",
+    "interval": 1,
+    "tooltip-format": "{:%Y-%m-%d}",
+    "on-click": "yad --calendar --no-buttons"
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-icons": {
-      "default": ["\ue050"]
+      "default": [""]
     },
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "pavucontrol",
-    "format-muted": "\uf00d {volume}%"
+    "format-muted": " {volume}%"
   },
   "tray": {
     "icon-size": 20,

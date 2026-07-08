@@ -1,16 +1,20 @@
 * {
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Nerd fond","JetBrainsMono Nerd Font", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 500;
 }
 
 window#waybar {
-    background-color: rgba(255, 254, 226, 0.5);
+    background-color: rgba(255, 254, 226, 0.6);
     color: #B4302C;
-    /* background-color: transparent; */
     border-radius: 10px;
     margin-top: 10px;
 }
+
+ /* .modules-left, .modules-right, .modules-center {
+    background-color: rgba(255, 254, 226, 0.8);
+    border-radius: 15px;
+} */
 
 #clock {
     background-color: #FFD650;
@@ -42,6 +46,7 @@ window#waybar {
     border-radius: 14.5px;
     padding: 0px 10px;
     margin-left: 20px;
+    margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -62,3 +67,11 @@ window#waybar {
     border-radius: 14.5px;
     padding: 0px 10px;
 } 
+
+#idle_inhibitor {
+    margin-left: 6px;
+}
+
+#tray {
+    margin-right: 5px;
+}
