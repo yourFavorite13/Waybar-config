@@ -21,7 +21,7 @@
   "clock": {
     "format": "{:%H:%M:%S}",
     "interval": 1,
-    "tooltip-format": "{:%Y-%m-%d}",
+    "tooltip-format": "{:%d-%m-%Y}",
     "on-click": "yad --calendar --no-buttons"
   },
   "pulseaudio": {
